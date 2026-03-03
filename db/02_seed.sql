@@ -19,14 +19,14 @@ INSERT INTO habits(name, id_category) VALUES
 
 -- LLENADO DE EMOCIONES BASE
 INSERT INTO emotions (name, img_url, id_category) VALUES
-('Alegria', '/images/emotions/alegria.png', 8),
-('Tristeza', '/images/emotions/tristeza.png', 9),
-('Ira', '/images/emotions/ira.png', 10),
-('Miedo', '/images/emotions/miedo.png', 11),
-('amor', '/images/emotions/amor.png', 12),
-('Desagrado', '/images/emotions/desagrado.png', 13),
-('Verguenza', '/images/emotions/verguenza.png', 14),
-('Culpa', '/images/emotions/culpa.png', 15);
+('Alegria',   'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_happy.png?alt=media',        8),
+('Tristeza',  'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_sadness.png?alt=media',      9),
+('Ira',       'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_angry.png?alt=media',        10),
+('Miedo',     'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_fear.png?alt=media',         11),
+('Amor',      'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_love.png?alt=media',         12),
+('Desagrado', 'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_disgust.png?alt=media',      13),
+('Verguenza', 'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_embarrasment.png?alt=media', 14),
+('Culpa',     'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_guilt.png?alt=media',        15);
 
 -- FOROS POR EDAD
 INSERT INTO forums (min_age, max_age) VALUES
