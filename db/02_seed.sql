@@ -1,11 +1,10 @@
 -- LLENADO DE CATEGORÍAS
-INSERT INTO categories (name) VALUES
-    ('Sueno'), ('Alimentacion general'), ('Interacciones sociales'),
-    ('Actividad fisica'), ('Autocuidado'), ('Manias'), ('Escuela/Trabajo'),
-    ('Alegria'), ('Tristeza'), ('Ira'), ('Miedo'), ('Amor'), 
-    ('Desagrado'), ('Verguenza'), ('Culpa'),
-    ('Bienestar emocional'), ('Estudios, trabajo y presion'),
-    ('Relaciones y vinculos'), ('Autoconimiento'), ('Logros');
+INSERT INTO categories (id, name) VALUES
+(1, 'Sueno'), (2, 'Relaciones y vinculos'), (3, 'Estudios, trabajo y presion'),
+(4, 'Actividad fisica'), (5, 'Autocuidado'), (6, 'Manias'), (7, 'Escuela/Trabajo'),
+(8, 'Alegria'), (9, 'Tristeza'), (10, 'Ira'), (11, 'Miedo'), (12, 'Amor'),
+(13, 'Desagrado'), (14, 'Verguenza'), (15, 'Culpa'), (16, 'Bienestar emocional'),
+(17, 'Alimentacion general'), (18, 'Interacciones sociales'), (19, 'Autoconimiento'), (20, 'Logros');
 
 -- LLENADO DE HÁBITOS
 INSERT INTO habits(name, id_category) VALUES
@@ -28,12 +27,16 @@ INSERT INTO emotions (name, img_url, id_category) VALUES
 ('Verguenza', 'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_embarrasment.png?alt=media', 14),
 ('Culpa',     'https://firebasestorage.googleapis.com/v0/b/daymood-prod-a60e1.firebasestorage.app/o/emotions%2Fem_guilt.png?alt=media',        15);
 
--- FOROS POR EDAD
-INSERT INTO forums (min_age, max_age) VALUES
-(18,20), (21,23), (24,60);
+-- LLENADO DE FOROS
+INSERT INTO forums (id, id_category, min_age, max_age) VALUES
+(gen_random_uuid(), 2, 18, 20), (gen_random_uuid(), 2, 21, 23), (gen_random_uuid(), 2, 24, 60),
+(gen_random_uuid(), 3, 18, 20), (gen_random_uuid(), 3, 21, 23), (gen_random_uuid(), 3, 24, 60),
+(gen_random_uuid(), 16, 18, 20), (gen_random_uuid(), 16, 21, 23), (gen_random_uuid(), 16, 24, 60),
+(gen_random_uuid(), 19, 18, 20), (gen_random_uuid(), 19, 21, 23), (gen_random_uuid(), 19, 24, 60),
+(gen_random_uuid(), 20, 18, 20), (gen_random_uuid(), 20, 21, 23), (gen_random_uuid(), 20, 24, 60);
 
 -- USUARIOS DE PRUEBA
-INSERT INTO users (firebase_uid, username, email, birth_day) VALUES 
+INSERT INTO users (firebase_uid, username, email, birth_day) VALUES
 ('firebase_test_uid_123', 'NadiaTest', 'nadia@example.com', '2005-05-15'),
 ('pIrV5rl9uRdCzEyshQJzXWy1fjn1', 'user_tkql2bk8', 'uwu@gmail.com', '2004-01-31'),
 ('ILJbfdO1QLWknuaUDT58PXpjVO02', 'nadiaprueba', 'nadiaprueba@gmail.com', '2000-01-01');
