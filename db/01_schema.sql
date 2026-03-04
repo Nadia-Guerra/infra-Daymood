@@ -2,7 +2,7 @@
 CREATE TABLE "categories"
 (
     "id"   SERIAL NOT NULL,
-    "name" VARCHAR(20),
+    "name" VARCHAR(50),
 
     CONSTRAINT "categories_pkey" PRIMARY KEY ("id")
 );
