@@ -122,14 +122,6 @@ CREATE TABLE "weekly_form"
     CONSTRAINT "weekly_form_pkey" PRIMARY KEY ("id")
 );
 
-view weekly_stats {
-  id_user    String   @db.Uuid
-  week_start DateTime
-  emotion    String
-  total      BigInt
-
-  @@unique([id_user, week_start, emotion]) // Prisma necesita algo que actúe como ID
-}
 
 -- CreateIndex
 CREATE UNIQUE INDEX "users_firebase_uid_key" ON "users" ("firebase_uid");
