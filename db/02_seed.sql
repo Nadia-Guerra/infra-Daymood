@@ -8,13 +8,50 @@ INSERT INTO categories (id, name) VALUES
 
 -- LLENADO DE HÁBITOS
 INSERT INTO habits(name, id_category) VALUES
-('8 horas o mas', 1), ('6 a 7 horas', 1), ('4 a 5 horas', 1), ('Menos de 4 horas', 1),
-('Balanceada', 2), ('Aceptable', 2), ('Irregular', 2), ('Insuficiente', 2),
-('Excelentes', 3), ('Positivas', 3), ('Neutras', 3), ('Conflictivas', 3),
-('60 minutos o mas', 4), ('30 a 60 minutos', 4), ('Menos de 30 minutos', 4), ('Ninguna', 4),
-('Completo', 5), ('Parcial', 5), ('Minimo', 5), ('Nulo', 5),
-('8 horas o mas', 6), ('6 a 7 horas', 6), ('4 a 5 horas', 6), ('Menos de 4 horas', 6),
-('Satisfactorio', 7), ('6 a 7 horas', 7), ('4 a 5 horas', 7), ('Menos de 4 horas', 7);
+
+--Sueño
+('8 horas o mas', 1), 
+('6 a 7 horas', 1), 
+('4 a 5 horas', 1), 
+('Menos de 4 horas', 1),
+
+--Alimentacion
+('Balanceada', 2), 
+('Aceptable', 2), 
+('Irregular', 2), 
+('Insuficiente', 2),
+
+--Interacciones sociales
+('Excelentes', 3), 
+('Positivas', 3), 
+('Neutras', 3), 
+('Conflictivas', 3),
+
+
+--Actividad física
+('60 minutos o mas', 4), 
+('30 a 60 minutos', 4), 
+('Menos de 30 minutos', 4), 
+('Ninguna', 4),
+
+
+--Autocuidado
+('Completo', 5), 
+('Parcial', 5), 
+('Minimo', 5), 
+('Nulo', 5),
+
+--Manias
+('Controladas', 6), 
+('Moderadas', 6), 
+('Excesivas', 6), 
+('Sin control', 6),
+
+--Escuela/Trabajo
+('Satisfactorio', 7), 
+('Aceptable', 7), 
+('Estresante', 7), 
+('Agotador', 7);
 
 -- LLENADO DE EMOCIONES BASE
 INSERT INTO emotions (name, img_url, id_category) VALUES
