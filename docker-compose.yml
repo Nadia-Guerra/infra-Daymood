@@ -5,6 +5,7 @@ services:
     image: postgres:15
     container_name: daymood_postgres
     restart: always
+    command: postgres -c shared_preload_libraries=pg_stat_statements
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
